@@ -1,0 +1,39 @@
+.ab_blocks{
+display: flex;
+
+flex-direction: row;
+}
+.ab_activity{
+    margin-top: 1%;
+    margin-left: 5% ;
+}
+.ab_work_details{
+    display: flex;
+flex-direction: row;
+ margin-top: 1%;
+    margin-left: 5% ;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 10%;
+
+}
+.ab_main{
+    background-color: beige;
+    width: 700px;
+    height: 250px;
+    margin-left: 25%;
+}
+.ab_profile{
+    margin-top: 1%;
+    margin-left: 5% ;
+
+}
+.ab_edit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 5% ;
+}
