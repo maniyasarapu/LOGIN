@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Signup.css";
 import { Link, useNavigate } from "react-router-dom";
+import bg from "../images/bg.jpg";
 
 const Signup = () => {
   const history = useNavigate();
@@ -51,114 +52,125 @@ const Signup = () => {
     }
   };
   return (
-    <div>
-      <div class="af_form">
-        <form method="POST">
-          <div class="af_body">
-            <div class="af_header">
-              <h2 id="af_two">Signup</h2>
-            </div>
-            <div class="af_block">
-              <label id="af_name" for="name">
-                Name
-              </label>
-              <input
-                autoComplete="off"
-                id="af_name"
-                type="text"
-                for="name"
-                value={user.name}
-                onChange={(e) => handleInputs("name", e)}
-              />
-            </div>
+       <div>
+         <div class="af">
 
-            <div class="af_block">
-              <label id="af_Mail" for="mail">
-                Email
-              </label>
-              <input
-                autoComplete="off"
-                name="email"
-                for="mail"
-                typr="text"
-                id="af_mail"
-                value={user.email}
-                onChange={(e) => handleInputs("email", e)}
-              />
-            </div>
+<div class="af_form">
+  <form method="POST">
+    <div class="af_body">
+      <div class="af_header">
+        <h2 id="af_two">Signup</h2>
+      </div>
+      <div class="af_block">
+        <label id="af_Name" for="name">
+          Name
+        </label>
+        <input
+          autoComplete="off"
+          id="af_name"
+          type="text"
+          for="name"
+          value={user.name}
+          onChange={(e) => handleInputs("name", e)}
+        />
+      </div>
 
-            <div class="af_block">
-              <label id="af_Num" for="num">
-                Number
-              </label>
-              <input
-                autoComplete="off"
-                name="phone"
-                for="num"
-                type="number"
-                id="af_num"
-                value={user.phone}
-                onChange={(e) => handleInputs("phone", e)}
-              />
-            </div>
+      <div class="af_block">
+        <label id="af_Mail" for="mail">
+          Email
+        </label>
+        <input
+          autoComplete="off"
+          name="email"
+          for="mail"
+          typr="text"
+          id="af_mail"
+          value={user.email}
+          onChange={(e) => handleInputs("email", e)}
+        />
+      </div>
 
-            <div class="af_block">
-              <label id="af_Age" for="age">
-                Work
-              </label>
-              <input
-                autoComplete="off"
-                name="work"
-                id="af_age"
-                type="text"
-                for="age"
-                value={user.work}
-                onChange={(e) => handleInputs("work", e)}
-              />
-            </div>
+      <div class="af_block">
+        <label id="af_Num" for="num">
+          Number
+        </label>
+        <input
+          autoComplete="off"
+          name="phone"
+          for="num"
+          type="number"
+          id="af_num"
+          value={user.phone}
+          onChange={(e) => handleInputs("phone", e)}
+        />
+      </div>
 
-            <div class="af_block">
-              <label id="af_Gen" for="gen">
-                Password
-              </label>
-              <input
-                autoComplete="off"
-                name="password"
-                for="gen"
-                type="password"
-                id="af_gen"
-                value={user.password}
-                onChange={(e) => handleInputs("password", e)}
-              />
-            </div>
+      <div class="af_block">
+        <label id="af_Age" for="age">
+          Work
+        </label>
+        <input
+          autoComplete="off"
+          name="work"
+          id="af_age"
+          type="text"
+          for="age"
+          value={user.work}
+          onChange={(e) => handleInputs("work", e)}
+        />
+      </div>
 
-            <div class="af_block">
-              <label id="af_Gen" for="gen">
-                Cpassword
-              </label>
-              <input
-                autoComplete="off"
-                name="cpassword"
-                for="gen"
-                type="password"
-                id="af_gen"
-                value={user.cpassword}
-                onChange={(e) => handleInputs("cpassword", e)}
-              />
-            </div>
-          </div>
-          <input
-            id="af_submit"
-            onClick={PostData}
-            type="submit"
-            value="Register"
-          />
-          <p>
-            <Link to="/login">Login</Link>
-          </p>
-        </form>
+      <div class="af_block">
+        <label id="af_Gen" for="gen">
+          Password
+        </label>
+        <input
+          autoComplete="off"
+          name="password"
+          for="gen"
+          type="password"
+          id="af_gen"
+          value={user.password}
+          onChange={(e) => handleInputs("password", e)}
+        />
+      </div>
+
+      <div class="af_block">
+        <label id="af_Gen" for="gen">
+          Cpassword
+        </label>
+        <input
+          autoComplete="off"
+          name="cpassword"
+          for="gen"
+          type="password"
+          id="af_gen"
+          value={user.cpassword}
+          onChange={(e) => handleInputs("cpassword", e)}
+        />
       </div>
     </div>
+   
+    <div id="af_login">
+    <div>
+    <input
+      id="af_submit"
+      onClick={PostData}
+      type="submit"
+      value="Register"
+    />
+    </div>
+    <p class="af_login_p">
+    <Link to="/login">already have an account</Link>
+    </p>
+    </div>
+      
+
+  </form>
+</div>
+</div>
+       </div>
+    
   );
 };
 

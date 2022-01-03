@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './login.css'
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from '../navbar/Navbar';
 
 const Login = () => {
   const history = useNavigate();
@@ -42,7 +43,9 @@ const Login = () => {
   };
    
     return (
+      
       <div>
+      
       <div class="login_form">
         <form method ="POST">
           <div class="login_body">
@@ -68,10 +71,17 @@ const Login = () => {
 
           
           </div>
-          <input id="login_submit" onClick={checkData} type="submit" value="Login" />  
-          <p>
+         <div class="login_links">
+        <div>
+        <input id="login_submit" onClick={checkData} type="submit" value="Login" />  
+        </div>
+
+        <div id="login_signup">
+        <p>
           <Link to="/signup">Signup</Link>
       </p> 
+        </div>
+         </div>
         </form>
       </div>
     </div>

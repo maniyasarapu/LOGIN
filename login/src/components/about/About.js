@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import './About.css'
 import mani from '../images/mani.JPG'
 import {useNavigate} from "react-router-dom";
+import Navbar from "../navbar/Navbar";
 const About = () => {
 
   const history = useNavigate();
@@ -41,6 +42,7 @@ useEffect(() => {
 
   return (
     <>
+    <Navbar/>
       <div className="ab_main">
         <div className="ab_blocks">
           <div className="ab_img">

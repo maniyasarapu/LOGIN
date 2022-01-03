@@ -7,14 +7,17 @@ import About from "./components/about/About";
 import Login from "./components/login/Login";
 import Signup from "./components/signup/Signup";
 import Error from "./components/error/Error";
+import Navbar1 from "./components/Navbar1/Navbar1";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+
         <Routes>
-          <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+
+          <Route path="/" element={<Signup />} />
 
           <Route path="/signup" element={<Signup />} />
 
@@ -25,8 +28,6 @@ const App = () => {
           <Route path="/about" element={ <About />}/>
           
           <Route path="/error" element={ <Error />}/>
-           
-        
         </Routes>
       </BrowserRouter>
     </div>

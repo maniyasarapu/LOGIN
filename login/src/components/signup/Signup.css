@@ -10,6 +10,7 @@
 } */
 body{
     margin: 0;
+    background-color: #D8E3E7;
 }
 .af_form {
 display: flex;
@@ -19,7 +20,7 @@ margin-top: 2%;
 border-radius: 2%;
 width: 600px;
 height: 500px;
-background-color: #dddddd;
+background-color: #51C4D3;
 }
 .af_body {
 display: flex;
@@ -40,7 +41,7 @@ justify-content: center;
 #af_Mail,
 #af_Gen,
 #af_Problem {
-color: black;
+color: #132C33;
 font-family: Poppins, sans-serif;
 }
 
@@ -58,16 +59,29 @@ border: none;
 width: 240px;
 }
 #af_submit {
-background-color: red;
+background-color: #126E82;
 margin-left: 25px;
 width: 100px;
 height: 30px;
 border: none;
-color: black;
+color: white;
 }
 .af_header h2 {
 margin-top: 20px;
 font-family: Poppins, sans-serif;
 font-size: 30px;
 color: black;
+}
+#af_login{
+    display: flex;
+    justify-content: space-around;
+}
+.af_login_p a{
+align-items: center;
+background-color: #126E82;
+margin-left: 25px;
+width: 100px;
+height: 30px;
+border: none;
+color: white;
 }

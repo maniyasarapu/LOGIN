@@ -1,8 +1,11 @@
 import React from "react";
 import "./Contact.css";
+import Navbar from "../navbar/Navbar";
+
 const Contact = () => {
   return (
     <div className="con_main">
+    <Navbar/>
       <div className="con_blocks">
         <div className="con_items">Phone</div>
         <div className="con_items">Email</div>
