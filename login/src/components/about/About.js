@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 const About = () => {
 
-  const history = useNavigate();
+const history = useNavigate();
     
 const callAboutPage = async () =>
 {
@@ -23,7 +23,7 @@ const res = await fetch('./about',{
     console.log(data);
 
 
-    if(!res.status===200)
+    if(res.status !==200)
     {
       const error = new Error(res.error);
       throw error;
@@ -31,7 +31,7 @@ const res = await fetch('./about',{
  
   }catch(err){
     console.log(err);
-    // history.push('/login');
+    history('/login');
 
   }
 }

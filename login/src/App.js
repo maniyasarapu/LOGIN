@@ -12,11 +12,10 @@ import Navbar1 from "./components/Navbar1/Navbar1";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
 
+      <BrowserRouter>
         <Routes>
         <Route path="/home" element={<Home />} />
-
           <Route path="/" element={<Signup />} />
 
           <Route path="/signup" element={<Signup />} />

@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import './login.css'
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from '../navbar/Navbar';
+import Navbar from '../navbar/Navbar'
 
 const Login = () => {
-  const history = useNavigate();
+  const history = useNavigate(); 
   
   const [user, setUser] = useState({
     email: "",
@@ -33,10 +33,10 @@ const Login = () => {
 
     // const data = await res.json();
 
-    if (data.status === 420) {
+    if (data.status != 200) {
       window.alert("Invalid details");
-    } else {
-      window.alert(" login successful");
+    }
+    else{
       history("/home");
 
     }
@@ -45,7 +45,7 @@ const Login = () => {
     return (
       
       <div>
-      
+      <Navbar/>
       <div class="login_form">
         <form method ="POST">
           <div class="login_body">
